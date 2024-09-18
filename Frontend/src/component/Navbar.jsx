@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { WiDaySunny } from "react-icons/wi";
 import { VscGithubInverted } from "react-icons/vsc";
 import { BsLinkedin } from "react-icons/bs";
+import { FaInstagram } from "react-icons/fa";
+
 
 const Navbar = () => {
     const [darkmode, setDarkmode] = useState(false);
@@ -21,7 +23,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className='mt-0 m-5 mx-10 p-5 relative z-10 px-11 font-bold rounded-xl backdrop-blur-3xl bg-gray-100/20 dark:bg-gray-950/10  transition-colors duration-300 shadowBG '>
+            <div className='mt-0 m-5 mx-10 p-5 relative z-10 px-11 font-bold rounded-xl backdrop-blur-3xl bg-gray-100/20 dark:bg-gray-950/10  transition-colors duration-300 shadowBG dark:shadow-none '>
 
                 <div className='flex justify-between items-center'>
 
@@ -36,6 +38,10 @@ const Navbar = () => {
                     </div>
 
                     <div className="flex gap-3 items-center w-36">
+
+                        <a href="https://www.instagram.com/_.niraj10?igsh=MW10YXhxdjBybWxxaA==" target="_blank" rel="noopener noreferrer">
+                            <FaInstagram size={22} className='text-gray-600 dark:text-white cursor-pointer' />
+                        </a>
 
                         <a href="https://www.linkedin.com/in/niraj-alone-7231aa328/" target="_blank" rel="noopener noreferrer">
                             <VscGithubInverted size={22} className='text-gray-600 dark:text-white cursor-pointer' />
