@@ -29,8 +29,8 @@ const Main = () => {
               </div>
 
               <div className='flex items-center gap-7 mt-3 '>
-                <div className='p-3 px-7 rounded-xl btnBg text-white dark:shadow-inner font-bold'>See my resume</div>
-                <div className='p-3 px-7 rounded-xl bg-[#F3F3F3] dark:bg-[#181818] text-[#181818] dark:text-[#808080] font-bold'>Get in touch</div>
+                <div className='p-3 px-7 rounded-xl btnBg text-[#808080] dark:shadow-inner font-bold'>See my resume</div>
+                <div className='p-3 px-7 rounded-xl bg-[#F3F3F3] dark:bg-[#181818] text-[#181818] dark:text-[#808080] font-bold transition-colors duration-300'>Get in touch</div>
               </div>
             </div>
 

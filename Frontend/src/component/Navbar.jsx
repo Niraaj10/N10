@@ -40,19 +40,19 @@ const Navbar = () => {
                     <div className="flex gap-3 items-center w-36">
 
                         <a href="https://www.instagram.com/_.niraj10?igsh=MW10YXhxdjBybWxxaA==" target="_blank" rel="noopener noreferrer">
-                            <FaInstagram size={22} className='text-gray-600 dark:text-white cursor-pointer' />
+                            <FaInstagram size={22} className='text-gray-600 dark:text-[#808080] cursor-pointer' />
                         </a>
 
                         <a href="https://www.linkedin.com/in/niraj-alone-7231aa328/" target="_blank" rel="noopener noreferrer">
-                            <VscGithubInverted size={22} className='text-gray-600 dark:text-white cursor-pointer' />
+                            <VscGithubInverted size={22} className='text-gray-600 dark:text-[#808080] cursor-pointer' />
                         </a>
 
                         <a href="https://github.com/Niraaj10" target="_blank" rel="noopener noreferrer">
-                            <BsLinkedin size={22} className='text-gray-600 dark:text-white cursor-pointer' />
+                            <BsLinkedin size={22} className='text-gray-600 dark:text-[#808080] cursor-pointer' />
                         </a>
 
                         <div className='border-l-2 border-gray-400 pl-3'>
-                            <WiDaySunny size={30} className='text-gray-600 dark:text-white cursor-pointer' onClick={toggleDarkMode} />
+                            <WiDaySunny size={30} className='text-gray-600 dark:text-[#808080] cursor-pointer' onClick={toggleDarkMode} />
                         </div>
                     </div>
                 </div>
