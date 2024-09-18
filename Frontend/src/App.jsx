@@ -8,7 +8,8 @@ function App() {
 
   return (
     <>
-      <div className=''>
+      <div className='min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-300'>
+
         <Main />
       </div>
     </>
