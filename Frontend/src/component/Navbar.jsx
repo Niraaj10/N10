@@ -23,12 +23,12 @@ const Navbar = () => {
 
     return (
         <>
-            <div className='mt-0 m-5 mx-10 p-5 relative z-10 px-11 font-bold rounded-xl backdrop-blur-3xl bg-gray-100/20 dark:bg-gray-950/10  transition-colors duration-300 shadowBG dark:shadow-none '>
+            <div className='mt-0 m-5 mx-10 p-5 fixed w-[94vw] z-50 px-11 font-bold rounded-xl backdrop-blur-3xl bg-gray-100/20 dark:bg-gray-950/10  transition-colors duration-300 shadowBG dark:shadow-none '>
 
                 <div className='flex justify-between items-center'>
 
-                    <div className="">
-                            logo
+                    <div className="logofont">
+                    N10
                     </div>
 
                     <div className="flex gap-3 cursor-pointer">
