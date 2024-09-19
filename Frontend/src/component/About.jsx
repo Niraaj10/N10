@@ -1,5 +1,7 @@
 import React from 'react'
-import BookSlider from './BookSlider'
+import first from '../assets/1st.jpg'
+import second from '../assets/2nd.jpg'
+import thrid from '../assets//3rd.jpg'
 
 const About = () => {
     const Me = [
@@ -12,15 +14,20 @@ const About = () => {
 
   return (
     <>
-      <div className='AboutSec mx-28 my-5'>
+      <div className='AboutSec mx-28 mt-5 pb-11'>
             <div className=''>
                 <div className='text-[5vw] font-bold'>
                     A little bit about me
                     {/* <div className='text-lg font-semibold text-[#808080]'>Who am I</div> */}
                 </div>
-                <div className='px-11 pt-10 flex justify-center items-center'>
+                <div className='px-2 pt-3 pb-5 flex justify-center items-center gap-10'>
                     <div>
-
+                        <div className='flex justify-center items-center h-full w-full'>
+                            <img src={second} alt="" className='w-[13vw] h-[40vh] object-cover rounded-lg relative z-10 -rotate-6 -mr-5 hover:z-30 hover:scale-150 transition-transform'/>
+                            <img src={thrid} alt="" className='w-[15vw] h-[50vh] object-cover rounded-lg relative z-20 hover:h-[60vh] hover:scale-x-125 transition-transform'/>
+                            <img src={first} alt="" className='w-[13vw] h-[40vh] object-cover rounded-lg rotate-6 relative z-10 -ml-5 hover:z-30 hover:scale-150 transition-transform' />
+                        </div>
+                        
                     </div>
 
                     <div className='basis-[50%]'>
@@ -33,8 +40,9 @@ const About = () => {
                                     </div>
                                 ))
                             }
-                            <div>
-                                Feel free to reach out via <a href="https://www.instagram.com/_.niraj10?igsh=MW10YXhxdjBybWxxaA==" className='text-black font-bold'>e-mail</a>, or follow me on Insta. Check out my <a href="/NirajCVUP.pdf" className='text-black font-bold'>Resume</a>, or Connect with me on <a href="https://www.linkedin.com/in/niraj-alone-7231aa328/" className='text-black font-bold'>LinkedIn</a>
+
+                            <div className='border-t pt-5'>
+                                Feel free to reach out via <a href="https://www.instagram.com/_.niraj10?igsh=MW10YXhxdjBybWxxaA==" className='text-black font-bold dark:text-white'>e-mail</a>, or follow me on Insta. Check out my <a href="/NirajCVUP.pdf" className='text-black font-bold dark:text-white'>Resume</a>, or Connect with me on <a href="https://www.linkedin.com/in/niraj-alone-7231aa328/" className='text-black font-bold dark:text-white'>LinkedIn</a>
                             </div>
                         </div>
                     </div>
