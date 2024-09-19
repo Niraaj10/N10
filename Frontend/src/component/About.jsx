@@ -23,9 +23,9 @@ const About = () => {
                 <div className='px-2 pt-3 pb-5 flex justify-center items-center gap-10'>
                     <div>
                         <div className='flex justify-center items-center h-full w-full'>
-                            <img src={second} alt="" className='w-[13vw] h-[40vh] object-cover rounded-lg relative z-10 -rotate-6 -mr-5 hover:z-30 hover:scale-150 transition-transform'/>
-                            <img src={thrid} alt="" className='w-[15vw] h-[50vh] object-cover rounded-lg relative z-20 hover:h-[60vh] hover:scale-x-125 transition-transform'/>
-                            <img src={first} alt="" className='w-[13vw] h-[40vh] object-cover rounded-lg rotate-6 relative z-10 -ml-5 hover:z-30 hover:scale-150 transition-transform' />
+                            <img src={second} alt="" className='w-[13vw] h-[40vh] object-cover rounded-lg relative z-10 -rotate-6 -mr-5 hover:z-30 hover:scale-150 transition-transform duration-300'/>
+                            <img src={thrid} alt="" className='w-[15vw] h-[50vh] object-cover rounded-lg relative z-20 '/>
+                            <img src={first} alt="" className='w-[13vw] h-[40vh] object-cover rounded-lg rotate-6 relative z-10 -ml-5 hover:z-30 hover:scale-150 transition-transform duration-300' />
                         </div>
                         
                     </div>
