@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import first from '../assets/1st.jpg'
 import second from '../assets/2nd.jpg'
-import thrid from '../assets//3rd.jpg'
+import thrid from '../assets/3rd.jpg'
+import GR from '../assets/GlowRight.png'
 
 const About = () => {
+
+
+    
+
     const Me = [
         {name: 'WHO I AM', content: " I'm Niraj Alone (also known as Niraaj10 on GitHub), a passionate and self-driven MERN stack developer based in India. With a deep enthusiasm for full-stack development, I focus on creating efficient, scalable, and user-friendly web applications."},
         // {name: 'WHAT I DO', content: "Through my hands-on experience in MERN stack development, I’ve not only honed my technical skills but also learned how to bridge the gap between development and design. My projects are born from a blend of curiosity, creativity, and a problem-solving mindset, allowing me to craft functional and visually engaging applications. Whether working on complex back-end logic or intuitive front-end interfaces, I am committed to delivering impact with every project."},
@@ -14,8 +19,9 @@ const About = () => {
 
   return (
     <>
-      <div className='AboutSec mx-28 mt-5 pb-11'>
-            <div className=''>
+      <div className='AboutSec mx-28 mt-5 pb-11 bg-white dark:bg-black'>
+            <div className='relative z-20 '>
+                <img src={GR} alt="" className='absolute z-0 h-[95vh] top-0 right-[-112px]'/>
                 <div className='text-[5vw] font-bold'>
                     A little bit about me
                     {/* <div className='text-lg font-semibold text-[#808080]'>Who am I</div> */}

@@ -5,7 +5,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
 
 
-const Navbar = () => {
+const Navbar = ({ scrollToAbout }) => {
     const [darkmode, setDarkmode] = useState(false);
 
     const toggleDarkMode = () => {
@@ -32,7 +32,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="flex gap-3 cursor-pointer">
-                        <div>About</div>
+                        <div onClick={scrollToAbout}>About</div>
                         <div>Projects</div>
                         <div>Contact</div>
                     </div>

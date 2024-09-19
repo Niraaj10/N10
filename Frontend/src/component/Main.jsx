@@ -1,15 +1,22 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import bgGlow from '../assets/GlowB.png'
 import Navbar from './Navbar'
 import N10 from '../assets/N10.png'
 import About from './About'
 
 const Main = () => {
+  const aboutRef = useRef(null);
+
+  const scrollToAbout = () => {
+    aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+
   return (
     <div className='Main pt-5 relative z-10 bg-white dark:bg-black transition-colors duration-300'>
       {/* Niraj10 */}
 
-      <Navbar />
+      <Navbar scrollToAbout={scrollToAbout}/>
 
       <div className=''>
 
@@ -47,12 +54,15 @@ const Main = () => {
         </div>
 
 
-      <div>
+        <div>
+
+        <div className='pt-16 bg-white dark:bg-black' ref={aboutRef}>
+          <About />
+        </div>
+
+        </div>
 
 
-      </div>
-
-        <About />
 
       </div>
     </div>
