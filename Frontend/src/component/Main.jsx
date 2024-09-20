@@ -3,6 +3,7 @@ import bgGlow from '../assets/GlowB.png'
 import Navbar from './Navbar'
 import N10 from '../assets/N10.png'
 import About from './About'
+import TechStack from './TechStack'
 
 const Main = () => {
   const aboutRef = useRef(null);
@@ -10,6 +11,8 @@ const Main = () => {
   const scrollToAbout = () => {
     aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  
 
 
   return (
@@ -58,6 +61,10 @@ const Main = () => {
 
         <div className='pt-16 bg-white dark:bg-black' ref={aboutRef}>
           <About />
+        </div>
+
+        <div className='pt-16 bg-white dark:bg-black' >
+          <TechStack />
         </div>
 
         </div>
