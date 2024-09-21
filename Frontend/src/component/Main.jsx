@@ -4,27 +4,33 @@ import Navbar from './Navbar'
 import N10 from '../assets/N10.png'
 import About from './About'
 import TechStack from './TechStack'
+import Projects from './Projects'
 
 const Main = () => {
   const aboutRef = useRef(null);
   const techRef = useRef(null);
+  const projectRef = useRef(null);
 
   const scrollToAbout = () => {
     aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
-  
+
   const scrollToTech = () => {
     techRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  
+  const scrollToPro = () => {
+    projectRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+
 
 
   return (
     <div className='Main pt-5 relative z-10 bg-white dark:bg-black transition-colors duration-300'>
       {/* Niraj10 */}
 
-      <Navbar scrollToAbout={scrollToAbout} scrollToTech={scrollToTech}/>
+      <Navbar scrollToAbout={scrollToAbout} scrollToTech={scrollToTech} scrollToPro={scrollToPro} />
 
       <div className=''>
 
@@ -64,13 +70,17 @@ const Main = () => {
 
         <div>
 
-        <div className='pt-16 bg-white dark:bg-black' ref={aboutRef}>
-          <About />
-        </div>
+          <div className='pt-16 bg-white dark:bg-black' ref={aboutRef}>
+            <About />
+          </div>
 
-        <div className='pt-16 bg-white dark:bg-black' ref={techRef} >
-          <TechStack />
-        </div>
+          <div className='pt-16 bg-white dark:bg-black' ref={techRef}>
+            <TechStack />
+          </div>
+
+          <div className='pt-16 bg-white dark:bg-black' ref={projectRef}>
+            <Projects />
+          </div>
 
         </div>
 

@@ -13,6 +13,7 @@ import html from '../assets/html.png'
 import js from '../assets/js.png'
 import css from '../assets/css.webp'
 import boot from '../assets/boot.png'
+import GL from '../assets/GlowLeft.png'
 
 
 
@@ -23,9 +24,13 @@ const TechStack = () => {
             <div className='TechStack mx-28 mt-5 pb-11 bg-white dark:bg-black '>
                 {/* TechStack */}
 
-                <div className='text-[5vw] font-bold  border-b border-[#80808021] pb-5'>
+
+
+                {/* <div className='text-[5vw] font-bold  border-b border-[#80808021] pb-5'> */}
+                <div className='relative text-[5vw] font-bold '>
+                <img src={GL} alt="" className='absolute z-0 h-[90vh] top-[60px] left-[-112px]'/>
                     Tech Stack
-                    <div className='ml-4 text-lg font-semibold text-[#808080]'>My Skills and Dev tools i use</div>
+                    <div className='ml-4 text-lg font-semibold text-[#808080]'>My Skills and Dev tools i use : </div>
                 </div>
 
                 <div className='my-10'>
