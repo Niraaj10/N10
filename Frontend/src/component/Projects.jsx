@@ -14,7 +14,7 @@ const Projects = () => {
 
 
 
-                <div className='ProjectSec'>
+                {/* <div className='ProjectSec'>
                     <div>
 
                         <div>
@@ -22,7 +22,7 @@ const Projects = () => {
                         </div>
 
                     </div>
-                </div>
+                </div> */}
 
             </div>
         </>
