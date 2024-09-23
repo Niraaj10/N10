@@ -8,6 +8,7 @@ import webSocketDark from '../assets/webDark.svg'
 import webSocketLight from '../assets/webLight.svg'
 import AiDark from '../assets/aiDark.svg'
 import AiLight from '../assets/aiLight.svg'
+import ProPH from '../assets/ProjectPH.svg'
 
 const Projects = () => {
     return (
@@ -47,15 +48,15 @@ const Projects = () => {
 
                                 <div className='mt-5'>
                                     <div className='p-3 px-7 rounded-xl backdrop-blur-3xl btnBg text-[#C5C5C5] dark:text-[#808080] font-bold shadowLightBG w-fit'> <a href="https://viewchart1.netlify.app/">Visit website</a></div>
-                                    
+
                                     <div className='flex gap-3 mt-3 items-center'>
                                         <div className='p-3 rounded-xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
                                             <img src={react} alt="" className='w-7' />
                                         </div>
 
                                         <div className='p-3 rounded-xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
-                                        <img src={webSocketDark} alt="" className='w-7 dark:hidden' />
-                                        <img src={webSocketLight} alt="" className='w-7 hidden dark:block' />                                        
+                                            <img src={webSocketDark} alt="" className='w-7 dark:hidden' />
+                                            <img src={webSocketLight} alt="" className='w-7 hidden dark:block' />
                                         </div>
                                         <div className='p-3 rounded-xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
                                             <img src={express} alt="" className='w-7' />
@@ -93,8 +94,8 @@ const Projects = () => {
                                 </div>
 
                                 <div className='mt-5'>
-                                    <div className='p-3 px-7 rounded-xl backdrop-blur-3xl btnBg text-[#C5C5C5] dark:text-[#808080] font-bold shadowLightBG w-fit'> <a href="https://viewchart1.netlify.app/">Visit website</a></div>
-                                    
+                                    <div className='p-3 px-7 rounded-xl backdrop-blur-3xl btnBg text-[#C5C5C5] dark:text-[#808080] font-bold shadowLightBG w-fit'> <a href="https://chickickzz10.netlify.app/">Visit website</a></div>
+
                                     <div className='flex gap-3 mt-3 items-center'>
                                         <div className='p-3 rounded-xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
                                             <img src={react} alt="" className='w-7' />
@@ -133,14 +134,14 @@ const Projects = () => {
                                 <div className='mt-3'>
                                     <li>This project is a Trip Planner application built with React that allows users to input a city name and date range to generate a detailed trip itinerary. </li>
                                     <li>The itinerary includes city description, hotel recommendations,
-                                    daily plans with activities, and location maps.
+                                        daily plans with activities, and location maps.
                                     </li>
                                     <li>Technologies Used - React ,Intergeted ChatGPT AI for trip plannig, Tripadvisor API for Places Information,HTML, CSS</li>
                                 </div>
 
                                 <div className='mt-5'>
-                                    <div className='p-3 px-7 rounded-xl backdrop-blur-3xl btnBg text-[#C5C5C5] dark:text-[#808080] font-bold shadowLightBG w-fit'> <a href="https://viewchart1.netlify.app/">Visit website</a></div>
-                                    
+                                    <div className='p-3 px-7 rounded-xl backdrop-blur-3xl btnBg text-[#C5C5C5] dark:text-[#808080] font-bold shadowLightBG w-fit'> <a href="https://your-guidee.netlify.app/">Visit website</a></div>
+
                                     <div className='flex gap-3 mt-3 items-center'>
                                         <div className='p-3 rounded-xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
                                             <img src={react} alt="" className='w-7' />
@@ -165,6 +166,23 @@ const Projects = () => {
 
                             <div className='basis-[50%]'>
                                 <img src="" alt="ViewChart" />
+                            </div>
+
+                        </div>
+
+
+                        <div className='ProjectPH border border-dashed h-[40vh] p-5 px-10 rounded-xl flex gap-5 justify-center items-center'>
+
+                            <div className='flex flex-col justify-center items-center gap-7'>
+                                <img src={ProPH} alt="" />
+
+                                <div className='flex flex-col justify-center items-center text-[2vw] font-bold'>
+                                    YOUR PROJECT GOES HERE
+                                    <div className='text-[#808080] text-sm'>
+                                        Let's turn your idea into a visual reality
+                                    </div>
+                                </div>
+
                             </div>
 
                         </div>

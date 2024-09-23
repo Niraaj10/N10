@@ -5,11 +5,13 @@ import N10 from '../assets/N10.png'
 import About from './About'
 import TechStack from './TechStack'
 import Projects from './Projects'
+import Contact from './Contact'
 
 const Main = () => {
   const aboutRef = useRef(null);
   const techRef = useRef(null);
   const projectRef = useRef(null);
+  const contactRef = useRef(null);
 
   const scrollToAbout = () => {
     aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -23,6 +25,10 @@ const Main = () => {
     projectRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToCont = () => {
+    contactRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
 
 
 
@@ -30,7 +36,7 @@ const Main = () => {
     <div className='Main pt-5 relative z-10 bg-white dark:bg-black transition-colors duration-300'>
       {/* Niraj10 */}
 
-      <Navbar scrollToAbout={scrollToAbout} scrollToTech={scrollToTech} scrollToPro={scrollToPro} />
+      <Navbar scrollToAbout={scrollToAbout} scrollToTech={scrollToTech} scrollToPro={scrollToPro} scrollToCont={scrollToCont} />
 
       <div className=''>
 
@@ -80,6 +86,10 @@ const Main = () => {
 
           <div className='pt-16 bg-white dark:bg-black' ref={projectRef}>
             <Projects />
+          </div>
+
+          <div className='pt-16 bg-white dark:bg-black' ref={contactRef}>
+            <Contact />
           </div>
 
         </div>
