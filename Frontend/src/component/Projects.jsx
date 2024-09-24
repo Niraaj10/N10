@@ -90,13 +90,14 @@ const Projects = () => {
                                 </div>
                             </div>
 
-                            <div className='basis-[50%] h-full'>
+                            <div className='basis-[50%] h-full flex items-center justify-center flex-col'>
 
-                                <div className='flex justify-center items-center relative w-[60vh] h-[31vh]'    
+                                    <img src={VC3} alt="ViewChart" className='rounded-lg w-[40vh] relative z-10 -mb-20 '/>
+
+                                <div className='flex justify-center bg-white items-center relative z-20 w-[60vh] h-[31vh]'    
                                     onMouseEnter={handleMouseEnter}
                                     onMouseLeave={handleMouseLeave}>
 
-                                    {/* <img src={VC2} alt="ViewChart" className='rounded-lg w-[30vh] relative z-10'/> */}
 
                                     <img
                                         src={VC1}
@@ -114,8 +115,9 @@ const Projects = () => {
                                             }`}
                                     />
 
-                                    {/* <img src={VC3} alt="ViewChart" className='rounded-lg w-[30vh] -ml-16 relative z-10'/> */}
                                 </div>
+
+                                <img src={VC2} alt="ViewChart" className='rounded-lg w-[40vh] relative z-10 -mt-20'/>
 
                             </div>
 
