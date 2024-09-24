@@ -1,7 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react'
 import macdottes from '../assets/mac.svg'
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        // console.log("name : ", formData.name);
+        // console.log("email : ", formData.email);
+        // console.log("message : ", formData.message);
+
+
+        emailjs.sendForm('service_a7rndln', 'template_fvaxu8a', e.target, 'Xg8cox_DZlb-nAGCH')
+            .then((result) => {
+                console.log(result.text);
+                console.log('Message sent successfully!');
+            }, (error) => {
+                console.log(error.text);
+                console.log('Failed to send message. Please try again.');
+            });
+
+        setFormData({ name: '', email: '', message: '' });
+    }
+
+
+
     return (
         <>
             <div className='Contact mx-28 mt-5 pb-11'>
@@ -24,26 +61,26 @@ const Contact = () => {
                         </div>
 
                         <div className='p-4 px-10 text-[#808080]'>
-                            <form>
+                            <form onSubmit={handleSubmit}>
 
                                 <div className='mb-3 py-2 border-b border-gray-100 dark:border-[#ffffff3f]'>
                                     <label htmlFor="name" className='text-black  dark:text-[#383737] font-semibold'>Name : </label>
-                                    <input type="text" name="name" id="name" className='ml-5 outline-none bg-transparent' placeholder='Enter your name' />
+                                    <input type="text" name="name" id="name" className='ml-5 outline-none bg-transparent' placeholder='Enter your name' value={formData.name} onChange={handleChange} required />
                                 </div>
 
                                 <div className='mb-3 py-2 border-b border-gray-100 dark:border-[#ffffff3f]'>
                                     <label htmlFor="email" className='text-black dark:text-[#383737] font-semibold'>Email : </label>
-                                    <input type="text" name="email" id="email" className='ml-5 outline-none bg-transparent' placeholder='Enter your email' />
+                                    <input type="email" name="email" id="email" className='ml-5 outline-none bg-transparent' placeholder='Enter your email' value={formData.email} onChange={handleChange} required />
                                 </div>
 
                                 <div className='py-2 '>
-                                    <textarea name="message" id="message" placeholder='Enter your message here...' className='bg-[#F6F6F6] dark:bg-[#090808] w-full h-[35vh] p-5 rounded-xl outline-none '></textarea>
+                                    <textarea name="message" id="message" placeholder='Enter your message here...' className='bg-[#F6F6F6] dark:bg-[#090808] w-full h-[35vh] p-5 rounded-xl outline-none ' value={formData.message} onChange={handleChange} required rows="4" ></textarea>
                                 </div>
 
                                 {/* <button type='submit' className='p-3 px-7 rounded-xl backdrop-blur-3xl btnBg text-[#C5C5C5] dark:text-[#808080] font-bold shadowLightBG items-end' >Send message</button> */}
 
-                                <div className='text-right'> 
-                                    <button type='submit' className='mr-5 p-3 px-7 rounded-xl backdrop-blur-3xl btnBg text-[#C5C5C5] dark:text-[#808080] font-bold shadowLightBG'>
+                                <div className='text-right'>
+                                    <button type='submit' className='mr-5 p-3 px-7 rounded-xl backdrop-blur-3xl btnBg text-[#C5C5C5] dark:text-[#808080] font-bold '>
                                         Send message
                                     </button>
                                 </div>
