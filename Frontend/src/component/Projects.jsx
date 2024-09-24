@@ -28,7 +28,7 @@ const Projects = () => {
 
                     <div className='p-10 px-20 flex flex-col gap-10'>
 
-                        <div className='ViewChart border p-5 px-10 rounded-xl flex gap-5 justify-center items-center'>
+                        <div className='ViewChart backdrop-blur-3xl border dark:border-[#23232355] bg-[#fafafadd] dark:bg-[#0f0f0f51]  p-5 px-10 rounded-xl flex gap-5 justify-center items-center'>
 
                             <div className='basis-[50%]'>
                                 <div className='text-xl font-bold'>
@@ -79,7 +79,7 @@ const Projects = () => {
 
 
 
-                        <div className='ChicKickzz border p-5 px-10 rounded-xl flex gap-5 justify-center items-center'>
+                        <div className='ChicKickzz backdrop-blur-3xl border dark:border-[#23232355] bg-[#fafafadd] dark:bg-[#0f0f0f51]  p-5 px-10 rounded-xl flex gap-5 justify-center items-center'>
 
                             <div className='basis-[50%]'>
                                 <div className='text-xl font-bold'>ChicKickzz
@@ -124,7 +124,7 @@ const Projects = () => {
                         </div>
 
 
-                        <div className='YourGuide border p-5 px-10 rounded-xl flex gap-5 justify-center items-center'>
+                        <div className='YourGuide backdrop-blur-3xl border dark:border-[#23232355] bg-[#fafafadd] dark:bg-[#0f0f0f51]  p-5 px-10 rounded-xl flex gap-5 justify-center items-center'>
 
                             <div className='basis-[50%]'>
                                 <div className='text-xl font-bold'>YourGuide -
@@ -171,7 +171,7 @@ const Projects = () => {
                         </div>
 
 
-                        <div className='ProjectPH border border-dashed h-[40vh] p-5 px-10 rounded-xl flex gap-5 justify-center items-center'>
+                        <div className='ProjectPH backdrop-blur-3xl border dark:border-[#23232355] bg-[#fafafadd] dark:bg-[#0f0f0f51] border-dashed h-[40vh] p-5 px-10 rounded-xl flex gap-5 justify-center items-center'>
 
                             <div className='flex flex-col justify-center items-center gap-7'>
                                 <img src={ProPH} alt="" />
