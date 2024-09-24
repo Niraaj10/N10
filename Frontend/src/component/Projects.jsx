@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import tailwind from '../assets/Tailwind.png'
 import react from '../assets/ReactJs.png'
 import express from '../assets/express.png'
@@ -9,8 +9,27 @@ import webSocketLight from '../assets/webLight.svg'
 import AiDark from '../assets/aiDark.svg'
 import AiLight from '../assets/aiLight.svg'
 import ProPH from '../assets/ProjectPH.svg'
+import VC1 from '../assets/project img/VC_P1.png'
+import VC2 from '../assets/project img/VC_P2.png'
+import VC3 from '../assets/project img/VC_P3.png'
+import VC_VF from '../assets/project img/VC.mp4'
 
 const Projects = () => {
+    const [isHovered, setIsHovered] = useState(false);
+
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+        // console.log(isHovered)
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+        // console.log(isHovered)
+
+    };
+
+
+
     return (
         <>
             <div className='Project mx-28 mt-5 pb-11 bg-white dark:bg-black'>
@@ -71,8 +90,33 @@ const Projects = () => {
                                 </div>
                             </div>
 
-                            <div className='basis-[50%]'>
-                                <img src="" alt="ViewChart" />
+                            <div className='basis-[50%] h-full'>
+
+                                <div className='flex justify-center items-center relative w-[60vh] h-[31vh]'    
+                                    onMouseEnter={handleMouseEnter}
+                                    onMouseLeave={handleMouseLeave}>
+
+                                    {/* <img src={VC2} alt="ViewChart" className='rounded-lg w-[30vh] relative z-10'/> */}
+
+                                    <img
+                                        src={VC1}
+                                        alt="ViewChart"
+                                        className={`rounded-lg object-cover w-[60vh] h-[31vh] absolute top-0 left-0 transition-opacity duration-500 ${isHovered ? 'opacity-0' : 'opacity-100'
+                                            }`}
+                                    />
+
+                                    <video
+                                        src={VC_VF}
+                                        autoPlay
+                                        muted
+                                        loop
+                                        className={`rounded-lg object-cover w-[60vh] h-[31vh] absolute top-0 left-0 transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'
+                                            }`}
+                                    />
+
+                                    {/* <img src={VC3} alt="ViewChart" className='rounded-lg w-[30vh] -ml-16 relative z-10'/> */}
+                                </div>
+
                             </div>
 
                         </div>
