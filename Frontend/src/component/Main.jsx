@@ -6,6 +6,7 @@ import About from './About'
 import TechStack from './TechStack'
 import Projects from './Projects'
 import Contact from './Contact'
+import ProfileCircle from '../assets/project img/PAC_Design.png'
 
 const Main = () => {
   const aboutRef = useRef(null);
@@ -42,7 +43,8 @@ const Main = () => {
 
 
         <div className='h-[86vh] w-full'>
-          <img src={bgGlow} alt="" className='absolute z-0 top-[-20px]  ' />
+            
+            <img src={bgGlow} alt="" className='absolute z-0 top-[-20px]  ' />
 
           <div className='relative z-10 h-full mt-16 flex justify-center items-center'>
 
@@ -66,8 +68,9 @@ const Main = () => {
               </div>
             </div>
 
-            <div className=''>
-              <img src={N10} alt="" className='w-[25vw]' />
+            <div className='relative w-[40vw] flex justify-center items-center '>
+              {/* <img src={ProfileCircle} alt="" className='absolute z-0 w-[40vw] -right-8 spin-animation opacity-80'/> */}
+              <img src={N10} alt="" className='w-[25vw] relative z-1' />
             </div>
 
           </div>

@@ -13,6 +13,14 @@ import VC1 from '../assets/project img/VC_P1.png'
 import VC2 from '../assets/project img/VC_P2.png'
 import VC3 from '../assets/project img/VC_P3.png'
 import VC_VF from '../assets/project img/VC.mp4'
+import CK1 from '../assets/project img/CK_P1.png'
+import CK2 from '../assets/project img/CK_P2.png'
+import CK3 from '../assets/project img/CK_P3.png'
+import CK_VF from '../assets/project img/CK_VF.mp4'
+import YG1 from '../assets/project img/YG_P1.png'
+import YG2 from '../assets/project img/YG_P2.png'
+import YG3 from '../assets/project img/YG_P3.png'
+import YG_VF from '../assets/project img/YG_VF.mp4'
 
 const Projects = () => {
     const [isHovered, setIsHovered] = useState(false);
@@ -94,7 +102,7 @@ const Projects = () => {
 
                                     <img src={VC3} alt="ViewChart" className='rounded-lg w-[40vh] relative z-10 -mb-20 '/>
 
-                                <div className='flex justify-center bg-white items-center relative z-20 w-[60vh] h-[31vh]'    
+                                <div className='flex justify-center bg-[#fafafadd] dark:bg-[#0f0f0f51] c items-center relative z-20 w-[60vh] h-[31vh]'    
                                     onMouseEnter={handleMouseEnter}
                                     onMouseLeave={handleMouseLeave}>
 
@@ -163,8 +171,35 @@ const Projects = () => {
                                 </div>
                             </div>
 
-                            <div className='basis-[50%]'>
-                                <img src="" alt="ViewChart" />
+                            <div className='basis-[50%] h-full flex items-center justify-center flex-col'>
+
+                                <img src={CK3} alt="ViewChart" className='rounded-lg shadowBG w-[40vh] relative z-10 -mb-20 '/>
+
+                                <div className='flex justify-center bg-[#fafafadd] dark:bg-[#0f0f0f51] c items-center relative z-20 w-[60vh] h-[31vh]'    
+                                    onMouseEnter={handleMouseEnter}
+                                    onMouseLeave={handleMouseLeave}>
+
+
+                                    <img
+                                        src={CK1}
+                                        alt="ViewChart"
+                                        className={`rounded-lg shadowBG object-cover w-[60vh] h-[31vh] absolute top-0 left-0 transition-opacity duration-500 ${isHovered ? 'opacity-0' : 'opacity-100'
+                                            }`}
+                                    />
+
+                                    <video
+                                        src={CK_VF}
+                                        autoPlay
+                                        muted
+                                        loop
+                                        className={`rounded-lg object-cover w-[60vh] h-[31vh] absolute top-0 left-0 transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'
+                                            }`}
+                                    />
+
+                                </div>
+
+                                <img src={CK2} alt="ViewChart" className='rounded-lg shadowBG w-[40vh] relative z-10 -mt-20'/>
+
                             </div>
 
                         </div>
@@ -210,8 +245,37 @@ const Projects = () => {
                                 </div>
                             </div>
 
-                            <div className='basis-[50%]'>
-                                <img src="" alt="ViewChart" />
+
+
+                            <div className='basis-[50%] h-full flex items-center justify-center flex-col'>
+
+                                    <img src={YG3} alt="ViewChart" className='rounded-lg shadowBG w-[40vh] relative z-10 -mb-20 '/>
+
+                                <div className='flex justify-center bg-[#fafafadd] dark:bg-[#0f0f0f51] c items-center relative z-20 w-[60vh] h-[31vh]'    
+                                    onMouseEnter={handleMouseEnter}
+                                    onMouseLeave={handleMouseLeave}>
+
+
+                                    <img
+                                        src={YG1}
+                                        alt="ViewChart"
+                                        className={`rounded-lg shadowBG object-cover w-[60vh] h-[31vh] absolute top-0 left-0 transition-opacity duration-500 ${isHovered ? 'opacity-0' : 'opacity-100'
+                                            }`}
+                                    />
+
+                                    <video
+                                        src={YG_VF}
+                                        autoPlay
+                                        muted
+                                        loop
+                                        className={`rounded-lg object-cover w-[60vh] h-[31vh] absolute top-0 left-0 transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'
+                                            }`}
+                                    />
+
+                                </div>
+
+                                <img src={YG2} alt="ViewChart" className='rounded-lg shadowBG w-[40vh] relative z-10 -mt-20'/>
+
                             </div>
 
                         </div>
