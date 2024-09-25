@@ -68,7 +68,8 @@ const Main = () => {
               </div>
             </div>
 
-            <div className='relative w-[40vw] flex justify-center items-center '>
+            {/* <div className='relative w-[40vw] flex justify-center items-center '> */}
+            <div className='relative '>
               {/* <img src={ProfileCircle} alt="" className='absolute z-0 w-[40vw] -right-8 spin-animation opacity-80'/> */}
               <img src={N10} alt="" className='w-[25vw] relative z-1' />
             </div>

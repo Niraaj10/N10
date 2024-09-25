@@ -30,11 +30,50 @@ const Projects = () => {
         // console.log(isHovered)
     };
 
+    // const handleMouseEnter = (projectId) => {
+    //     setIsHovered(projectId);
+    //     // console.log(isHovered)
+    // };
+
     const handleMouseLeave = () => {
         setIsHovered(false);
+        // setIsHovered(null);
         // console.log(isHovered)
 
     };
+
+
+    const projects = [
+        {
+            id: 1,
+            name: 'ViewChart',
+            description: 'Real-time stock market tracker',
+            link: 'https://viewchart1.netlify.app/',
+            details: [
+                "ViewChart is a full-stack real-time stock market tracker built with React, Node.js, Express, MongoDB, and WebSocket.io.",
+                "It provides live stock price updates using WebSocket and visualizes stock data with dynamic candlestick charts via ReactApexChart.",
+                "Technologies Used: React, Node.js, Express, MongoDB, WebSocket.io , JWT Authentication, ReactApexChart, Finnhub API, Tailwind CSS"
+            ],
+            techStack: [react, webSocketDark, webSocketLight, express, mongoDB, tailwind],
+            images: { img1: VC3, img2: VC1, img3: VC2 },
+            video: VC_VF
+        },
+        {
+            id: 2,
+            name: 'ChicKickzz',
+            description: 'E-commerce platform for sneakers',
+            link: 'https://chickickzz10.netlify.app/',
+            details: [
+                "ChicKickzz is a full-stack e-commerce platform designed for sneaker enthusiasts, leveraging the MERN (MongoDB, Express.js, React.js, Node.js) stack.",
+                "The platform provides a seamless and intuitive shopping experience, enabling users to browse, select, and purchase sneakers from a curated catalog.",
+                "Technologies Used: React, Node.js, Express, MongoDB, WebSocket.io , JWT Authentication, Tailwind CSS"
+            ],
+            techStack: [react, node, express, mongoDB, tailwind],
+            images: { img1: CK3, img2: CK1, img3: CK2 },
+            video: CK_VF
+        },
+        // Add more project objects similarly
+    ];
 
 
 
@@ -280,6 +319,8 @@ const Projects = () => {
 
                         </div>
 
+
+                        
 
                         <div className='ProjectPH backdrop-blur-3xl border dark:border-[#23232355] bg-[#fafafadd] dark:bg-[#0f0f0f51] border-dashed h-[40vh] p-5 px-10 rounded-xl flex gap-5 justify-center items-center'>
 
