@@ -27,7 +27,7 @@ const Navbar = ({ scrollToAbout, scrollToTech, scrollToPro, scrollToCont }) => {
 
                 <div className='flex justify-between items-center'>
 
-                    <div className="logofont">
+                    <div className="logofont font-extrabold text-[2vw] ">
                     N10
                     </div>
 

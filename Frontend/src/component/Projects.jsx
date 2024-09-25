@@ -94,7 +94,7 @@ const Projects = () => {
 
                     <div className='p-10 px-20 flex flex-col gap-10'>
 
-                        <div className='ViewChart backdrop-blur-3xl border dark:border-[#23232355] bg-[#fafafadd] dark:bg-[#0f0f0f51]  p-5 px-10 rounded-xl flex gap-5 justify-center items-center'>
+                        <div className='ViewChart backdrop-blur-3xl border dark:border-[#23232355] bg-[#fafafadd] dark:bg-[#0f0f0f51]  p-5 px-10 py-20  rounded-xl flex gap-5 justify-center items-center'>
 
                             <div className='basis-[50%]'>
                                 <div className='text-xl font-bold'>
@@ -172,7 +172,7 @@ const Projects = () => {
 
 
 
-                        <div className='ChicKickzz backdrop-blur-3xl border dark:border-[#23232355] bg-[#fafafadd] dark:bg-[#0f0f0f51]  p-5 px-10 rounded-xl flex gap-5 justify-center items-center'>
+                        <div className='ChicKickzz my-16 py-20 backdrop-blur-3xl border dark:border-[#23232355] bg-[#fafafadd] dark:bg-[#0f0f0f51]  p-5 px-10 rounded-xl flex gap-5 justify-center items-center'>
 
                             <div className='basis-[50%]'>
                                 <div className='text-xl font-bold'>ChicKickzz
@@ -244,7 +244,7 @@ const Projects = () => {
                         </div>
 
 
-                        <div className='YourGuide backdrop-blur-3xl border dark:border-[#23232355] bg-[#fafafadd] dark:bg-[#0f0f0f51]  p-5 px-10 rounded-xl flex gap-5 justify-center items-center'>
+                        <div className='YourGuide backdrop-blur-3xl border dark:border-[#23232355] bg-[#fafafadd] dark:bg-[#0f0f0f51]  p-5 px-10 py-20  rounded-xl flex gap-5 justify-center items-center'>
 
                             <div className='basis-[50%]'>
                                 <div className='text-xl font-bold'>YourGuide -
