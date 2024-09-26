@@ -23,20 +23,31 @@ const Navbar = ({ scrollToAbout, scrollToTech, scrollToPro, scrollToCont }) => {
 
     return (
         <>
+                    <div className='md:hidden lg:hidden fixed bottom-2 z-50 '>
+                        <div className="flex md:hidden lg:hidden w-[90vw] gap-5 justify-between mx-6 my-2 rounded-xl p-5 cursor-pointer shadowBG dark:shadow-none backdrop-blur-3xl bg-gray-100/20 dark:bg-gray-950/10">
+                            <div onClick={scrollToAbout}>About</div>
+                            <div onClick={scrollToPro}>Projects</div>
+                            <div onClick={scrollToTech}>TechStack</div>
+                            <div onClick={scrollToCont}>Contact</div>
+                        </div>
+                    </div>
+
             <div className='mt-0 m-5 mx-10 p-5 fixed w-[94vw] z-50 px-11 font-bold rounded-xl backdrop-blur-3xl bg-gray-100/20 dark:bg-gray-950/10  transition-colors duration-300 shadowBG dark:shadow-none '>
+                    
 
                 <div className='flex justify-between items-center'>
 
-                    <div className="logofont font-extrabold text-[2vw] ">
-                    N10
+                    <div className="logofont font-extrabold text-[6vw] md:text-[4vw] lg:text-[2vw] ">
+                        N10
                     </div>
 
-                    <div className="flex gap-3 cursor-pointer">
+                    <div className="hidden md:flex lg:flex gap-3  cursor-pointer">
                         <div onClick={scrollToAbout}>About</div>
                         <div onClick={scrollToPro}>Projects</div>
                         <div onClick={scrollToTech}>TechStack</div>
                         <div onClick={scrollToCont}>Contact</div>
                     </div>
+
 
                     <div className="flex gap-3 items-center w-36">
 

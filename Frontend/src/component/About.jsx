@@ -19,19 +19,19 @@ const About = () => {
 
   return (
     <>
-      <div className='AboutSec mx-28 mt-5 pb-11 bg-white dark:bg-black'>
+      <div className='AboutSec md:mx-28 mx-10 lg:mx-28 mt-5 pb-11 bg-white dark:bg-black'>
             <div className='relative z-20 '>
-                <img src={GR} alt="" className='absolute z-0 h-[95vh] top-0 right-[-112px]'/>
-                <div className='text-[5vw] font-bold'>
+                <img src={GR} alt="" className='absolute z-0 h-[95vh] top-0 right-[-40px] md:right-[-112px] lg:right-[-112px]'/>
+                <div className='text-[11vw] md:text-[5vw] lg:text-[5vw] font-bold'>
                     A little bit about me
                     {/* <div className='text-lg font-semibold text-[#808080]'>Who am I</div> */}
                 </div>
-                <div className='px-2 pt-3 pb-5 flex justify-center items-center gap-10'>
+                <div className='px-2 pt-3 pb-5 flex flex-col md:flex-row lg:flex-row  justify-center items-center gap-10'>
                     <div>
-                        <div className='flex justify-center items-center h-full w-full'>
-                            <img src={second} alt="" className='w-[13vw] h-[40vh] object-cover rounded-lg relative z-10 -rotate-6 -mr-5 hover:z-30 hover:scale-150 transition-transform duration-300'/>
-                            <img src={thrid} alt="" className='w-[15vw] h-[50vh] object-cover rounded-lg relative z-20 '/>
-                            <img src={first} alt="" className='w-[13vw] h-[40vh] object-cover rounded-lg rotate-6 relative z-10 -ml-5 hover:z-30 hover:scale-150 transition-transform duration-300' />
+                        <div className='flex  justify-center items-center h-full w-full'>
+                            <img src={second} alt="" className='w-[25vw] md:w-[13vw] lg:w-[13vw] h-[26vh] md:h-[40vh] lg:h-[40vh] object-cover rounded-lg relative z-10 -rotate-6 -mr-5 hover:z-30 hover:scale-110 md:hover:scale-150 lg:hover:scale-150 transition-transform duration-300'/>
+                            <img src={thrid} alt="" className='w-[45vw] md:w-[15vw] lg:w-[15vw] h-[35vh] md:h-[50vh] lg:h-[50vh] object-cover rounded-lg relative z-20 '/>
+                            <img src={first} alt="" className='w-[25vw] md:w-[13vw] lg:w-[13vw] h-[26vh] md:h-[40vh] lg:h-[40vh] object-cover rounded-lg rotate-6 relative z-10 -ml-5 hover:z-30 hover:scale-110 md:hover:scale-150 lg:hover:scale-150 transition-transform duration-300' />
                         </div>
                         
                     </div>

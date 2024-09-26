@@ -42,15 +42,15 @@ const Main = () => {
       <div className=''>
 
 
-        <div className='h-[86vh] w-full'>
+        <div className='h-[96vh] md:h-[86vh] lg:h-[86vh] mt-40 md:mt-0 lg:mt-0 mb-20 md:mb-0 lg:mb-0 w-full'>
             
-            <img src={bgGlow} alt="" className='absolute z-0 top-[-20px]  ' />
+          <img src={bgGlow} alt="" className='absolute z-0 object-cover w-[100vw] h-[90vh] top-[-1px] md:top-[-20px] lg:top-[-20px]  ' />
 
-          <div className='relative z-10 h-full mt-16 flex justify-center items-center'>
+          <div className='relative z-10 h-full mt-16 mx-10 md:mx-0 lg:mx-0 flex flex-col-reverse md:flex-row lg:flex-row  md:justify-center lg:justify-center justify-start items-center'>
 
             <div className='basis-[50%] '>
-              <div className='fonttext text-[20vh] font-bold ' >
-                <span className='text-gray-500 text-[15vh] textShadow'>I'm </span>
+              <div className='fonttext text-[7vh] md:text-[10vh] lg:text-[20vh] font-bold ' >
+                <span className='text-gray-500 text-[5vh] md:text-[7vh] lg:text-[15vh] textShadow'>I'm </span>
                 Niraj
               </div>
 
@@ -58,20 +58,20 @@ const Main = () => {
                 A passionate MERN stack developer with a knack for creativity and problem-solving. I recently graduated with a degree in BCA, and I love to blend my technical skills with my creative interests to bring innovative ideas to life.
               </div>
 
-              <div className='flex items-center gap-7 mt-3 '>
-                <div className='p-3 px-7 rounded-xl backdrop-blur-3xl btnBg text-[#C5C5C5] dark:text-[#808080] font-bold shadowLightBG'>
+              <div className='flex flex-col md:flex-row lg:flex-row items-center gap-7 mt-10 md:mt-3 lg:mt-3 '>
+                <div className='w-full md:w-[18vw] lg:w-[18vw] text-center p-3 px-7 rounded-xl btnBg text-[#C5C5C5] dark:text-[#808080] font-bold shadowLightBG'>
                   <a href="/NirajCVUP.pdf" target="_blank" rel="noopener noreferrer">
                     See my resume
                   </a>
                 </div>
-                <div className='p-3 px-7 rounded-xl backdrop-blur-3xl bg-[#F3F3F3] dark:bg-[#181818] text-[#181818] dark:text-[#808080] font-bold transition-colors duration-300'>Get in touch</div>
+                <div className='w-full  md:w-[18vw] lg:w-[18vw] text-center p-3 px-7 rounded-xl bg-[#F3F3F3] dark:bg-[#181818] text-[#181818] dark:text-[#808080] font-bold transition-colors duration-300'>Get in touch</div>
               </div>
             </div>
 
             {/* <div className='relative w-[40vw] flex justify-center items-center '> */}
             <div className='relative '>
               {/* <img src={ProfileCircle} alt="" className='absolute z-0 w-[40vw] -right-8 spin-animation opacity-80'/> */}
-              <img src={N10} alt="" className='w-[25vw] relative z-1' />
+              <img src={N10} alt="" className='w-[65vw] my-10 md:my-0 lg:my-0 md:w-[25vw] lg:w-[25vw] relative z-1' />
             </div>
 
           </div>
