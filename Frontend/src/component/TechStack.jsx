@@ -21,13 +21,13 @@ import GL from '../assets/GlowLeft.png'
 const TechStack = () => {
     return (
         <>
-            <div className='TechStack mx-28 mt-5 pb-11 bg-white dark:bg-black '>
+            <div className='TechStack md:mx-28 mx-10 mt-5 pb-11 bg-white dark:bg-black '>
                 {/* TechStack */}
 
 
 
                 {/* <div className='text-[5vw] font-bold  border-b border-[#80808021] pb-5'> */}
-                <div className='relative text-[5vw] font-bold '>
+                <div className='relative text-[9vw] lg:text-[5vw] font-bold '>
                 <img src={GL} alt="" className='absolute z-0 h-[90vh] top-[60px] left-[-112px]'/>
                     Tech Stack
                     <div className='ml-4 text-lg font-semibold text-[#808080]'>My Skills and Dev tools i use : </div>
@@ -38,30 +38,30 @@ const TechStack = () => {
 
                     {/* <div className='font-bold ml-5 mb-5 '>Skills</div> */}
 
-                    <div className='grid grid-cols-6 px-16 items-center justify-center gap-7'>
-                        <div className='p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
-                            <img src={react} alt="" className='w-[6vw]' />
+                    <div className='grid grid-cols-3 md:grid-cols-6 lg:grid-cols-6 md:px-16 lg:px-16 items-center justify-center gap-7'>
+                        <div className='p-4 md:p-9 lg:p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
+                            <img src={react} alt="" className='w-[12vw] md:w-[6vw] lg:w-[6vw]' />
                         </div>
-                        <div className='p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
-                            <img src={node} alt="" className='w-[6vw] h-[98px] rounded-3xl' />
+                        <div className='p-4 md:p-9 lg:p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
+                            <img src={node} alt="" className='w-[12vw] md:w-[6vw] lg:w-[6vw]  h-[57px] md:h-[98px] lg:h-[98px] rounded-3xl' />
                         </div>
-                        <div className='p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
-                            <img src={express} alt="" className='w-[6vw] rounded-full' />
+                        <div className='p-4  md:p-9 lg:p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
+                            <img src={express} alt="" className='w-[12vw] md:w-[6vw] lg:w-[6vw] rounded-full' />
                         </div>
-                        <div className='p-9 rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
-                            <img src={js} alt="" className='w-[6vw]' />
+                        <div className='p-4 md:p-9 lg:p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
+                            <img src={js} alt="" className='w-[12vw] md:w-[6vw] lg:w-[6vw]' />
                         </div>
-                        <div className='p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
-                            <img src={mongoDB} alt="" className='w-[6vw]' />
+                        <div className='p-4  md:p-9 lg:p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
+                            <img src={mongoDB} alt="" className='w-[12vw] md:w-[6vw] lg:w-[6vw]' />
                         </div>
-                        <div className='p-9 py-14  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
-                            <img src={tailwind} alt="" className='w-[6vw]' />
+                        <div className='p-4 md:p-9 lg:p-9  py-6 md:py-14 lg:py-14  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
+                            <img src={tailwind} alt="" className='w-[12vw] md:w-[6vw] lg:w-[6vw]' />
                         </div>
-                        <div className='p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
-                            <img src={html} alt="" className='w-[6vw]' />
+                        <div className='p-4  md:p-9 lg:p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
+                            <img src={html} alt="" className='w-[12vw] md:w-[6vw] lg:w-[6vw]' />
                         </div>
-                        <div className='p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
-                            <img src={css} alt="" className='w-[6vw]' />
+                        <div className='p-4  md:p-9 lg:p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
+                            <img src={css} alt="" className='w-[12vw] md:w-[6vw] lg:w-[6vw]' />
                         </div>
                     {/* </div> */}
 
@@ -71,23 +71,23 @@ const TechStack = () => {
                     {/* <div className='font-bold ml-5 mb-5 mt-10'>Dev Tools</div> */}
 
                     {/* <div className='grid grid-cols-6 px-16'> */}
-                        <div className='p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
-                            <img src={vscode} alt="" className='w-[6vw]' />
+                        <div className='p-4  md:p-9 lg:p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
+                            <img src={vscode} alt="" className='w-[12vw] md:w-[6vw] lg:w-[6vw]' />
                         </div>
-                        <div className='p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
-                            <img src={git} alt="" className='w-[6vw] rounded-3xl' />
+                        <div className='p-4  md:p-9 lg:p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
+                            <img src={git} alt="" className='w-[12vw] md:w-[6vw] lg:w-[6vw] rounded-3xl' />
                         </div>
-                        <div className='p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
-                            <img src={postman} alt="" className='w-[6vw] rounded-full' />
+                        <div className='p-4  md:p-9 lg:p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
+                            <img src={postman} alt="" className='w-[12vw] md:w-[6vw] lg:w-[6vw] rounded-full' />
                         </div>
-                        <div className='p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
-                            <img src={figma} alt="" className='w-[6vw]' />
+                        <div className='p-4  md:p-9 lg:p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
+                            <img src={figma} alt="" className='w-[12vw] md:w-[6vw] lg:w-[6vw]' />
                         </div>
-                        <div className='p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
-                            <img src={vercel} alt="" className='w-[6vw]' />
+                        <div className='p-4  md:p-9 lg:p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
+                            <img src={vercel} alt="" className='w-[12vw] md:w-[6vw] lg:w-[6vw]' />
                         </div>
-                        <div className='p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
-                            <img src={boot} alt="" className='w-[6vw]' />
+                        <div className='p-4  md:p-9 lg:p-9  rounded-3xl w-fit h-fit backdrop-blur-xl bg-gray-100/50 dark:bg-gray-900/10 border border-gray-100 dark:border-[#23232355]'>
+                            <img src={boot} alt="" className='w-[12vw] md:w-[6vw] lg:w-[6vw]' />
                         </div>
                     </div>
 
