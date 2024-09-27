@@ -79,7 +79,7 @@ const Projects = () => {
 
     return (
         <>
-            <div className='Project mx-28 mt-5 pb-11 bg-white dark:bg-black'>
+            <div className='Project  md:mx-28 mx-10 mt-5 pb-11 bg-white dark:bg-black'>
                 {/* Project */}
 
 
@@ -92,9 +92,9 @@ const Projects = () => {
 
                 <div className='ProjectSec mt-5'>
 
-                    <div className='p-10 px-20 flex flex-col gap-10'>
+                    <div className='md:p-10 lg:p-10 md:px-20 lg:px-20 flex flex-col gap-10'>
 
-                        <div className='ViewChart backdrop-blur-3xl border dark:border-[#23232355] bg-[#fafafadd] dark:bg-[#0f0f0f51]  p-5 px-10 py-20  rounded-xl flex gap-5 justify-center items-center'>
+                        <div className='ViewChart backdrop-blur md:backdrop-blur-3xl lg:backdrop-blur-3xl border dark:border-[#23232355] bg-[#fafafadd] dark:bg-[#0f0f0f51]  p-5 px-10 py-20  rounded-xl flex flex-col md:flex-row lg:flex-row gap-5 justify-center items-center'>
 
                             <div className='basis-[50%]'>
                                 <div className='text-xl font-bold'>
@@ -139,9 +139,9 @@ const Projects = () => {
 
                             <div className='basis-[50%] h-full flex items-center justify-center flex-col'>
 
-                                    <img src={VC3} alt="ViewChart" className='rounded-lg w-[40vh] relative z-10 -mb-20 '/>
+                                    <img src={VC3} alt="ViewChart" className='rounded-lg w-[55vw] md:w-[22vw] lg:w-[22vw] relative z-10 -mb-20 '/>
 
-                                <div className='flex justify-center bg-[#fafafadd] dark:bg-[#0f0f0f51] c items-center relative z-20 w-[60vh] h-[31vh]'    
+                                <div className='flex justify-center bg-[#fafafadd] dark:bg-[#0f0f0f51] c items-center relative z-20 w-[71vw] h-[19vh] md:w-[31vw] md:h-[31vh] lg:w-[31vw] lg:h-[31vh]'    
                                     onMouseEnter={handleMouseEnter}
                                     onMouseLeave={handleMouseLeave}>
 
@@ -149,7 +149,7 @@ const Projects = () => {
                                     <img
                                         src={VC1}
                                         alt="ViewChart"
-                                        className={`rounded-lg object-cover w-[60vh] h-[31vh] absolute top-0 left-0 transition-opacity duration-500 ${isHovered ? 'opacity-0' : 'opacity-100'
+                                        className={`rounded-lg object-cover w-[71vw] h-[19vh] md:w-[31vw] md:h-[31vh] lg:w-[31vw] lg:h-[31vh] absolute top-0 left-0 transition-opacity duration-500 ${isHovered ? 'opacity-0' : 'opacity-100'
                                             }`}
                                     />
 
@@ -158,13 +158,13 @@ const Projects = () => {
                                         autoPlay
                                         muted
                                         loop
-                                        className={`rounded-lg object-cover w-[60vh] h-[31vh] absolute top-0 left-0 transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'
+                                        className={`rounded-lg object-cover w-[71vw] h-[19vh] md:w-[31vw] md:h-[31vh] lg:w-[31vw] lg:h-[31vh] absolute top-0 left-0 transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'
                                             }`}
                                     />
 
                                 </div>
 
-                                <img src={VC2} alt="ViewChart" className='rounded-lg w-[40vh] relative z-10 -mt-20'/>
+                                <img src={VC2} alt="ViewChart" className='rounded-lg w-[55vw] md:w-[22vw] lg:w-[22vw] relative z-10 -mt-20'/>
 
                             </div>
 
@@ -172,7 +172,7 @@ const Projects = () => {
 
 
 
-                        <div className='ChicKickzz my-16 py-20 backdrop-blur-3xl border dark:border-[#23232355] bg-[#fafafadd] dark:bg-[#0f0f0f51]  p-5 px-10 rounded-xl flex gap-5 justify-center items-center'>
+                        <div className='ChicKickzz my-16 py-20 backdrop-blur md:backdrop-blur-3xl lg:backdrop-blur-3xl border dark:border-[#23232355] bg-[#fafafadd] dark:bg-[#0f0f0f51]  p-5 px-10 rounded-xl flex flex-col md:flex-row lg:flex-row gap-5 justify-center items-center'>
 
                             <div className='basis-[50%]'>
                                 <div className='text-xl font-bold'>ChicKickzz
@@ -212,9 +212,9 @@ const Projects = () => {
 
                             <div className='basis-[50%] h-full flex items-center justify-center flex-col'>
 
-                                <img src={CK3} alt="ViewChart" className='rounded-lg shadowBG w-[40vh] relative z-10 -mb-20 '/>
+                                <img src={CK3} alt="ViewChart" className='rounded-lg shadowBG w-[55vw] md:w-[22vw] lg:w-[22vw] relative z-10 -mb-20 '/>
 
-                                <div className='flex justify-center bg-[#fafafadd] dark:bg-[#0f0f0f51] c items-center relative z-20 w-[60vh] h-[31vh]'    
+                                <div className='flex justify-center bg-[#fafafadd] dark:bg-[#0f0f0f51] c items-center relative z-20 w-[71vw] h-[19vh] md:w-[31vw] md:h-[31vh] lg:w-[31vw] lg:h-[31vh]'    
                                     onMouseEnter={handleMouseEnter}
                                     onMouseLeave={handleMouseLeave}>
 
@@ -222,7 +222,7 @@ const Projects = () => {
                                     <img
                                         src={CK1}
                                         alt="ViewChart"
-                                        className={`rounded-lg shadowBG object-cover w-[60vh] h-[31vh] absolute top-0 left-0 transition-opacity duration-500 ${isHovered ? 'opacity-0' : 'opacity-100'
+                                        className={`rounded-lg shadowBG object-cover w-[71vw] h-[19vh] md:w-[31vw] md:h-[31vh] lg:w-[31vw] lg:h-[31vh] absolute top-0 left-0 transition-opacity duration-500 ${isHovered ? 'opacity-0' : 'opacity-100'
                                             }`}
                                     />
 
@@ -231,20 +231,20 @@ const Projects = () => {
                                         autoPlay
                                         muted
                                         loop
-                                        className={`rounded-lg object-cover w-[60vh] h-[31vh] absolute top-0 left-0 transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'
+                                        className={`rounded-lg object-cover w-[71vw] h-[19vh] md:w-[31vw] md:h-[31vh] lg:w-[31vw] lg:h-[31vh] absolute top-0 left-0 transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'
                                             }`}
                                     />
 
                                 </div>
 
-                                <img src={CK2} alt="ViewChart" className='rounded-lg shadowBG w-[40vh] relative z-10 -mt-20'/>
+                                <img src={CK2} alt="ViewChart" className='rounded-lg shadowBG w-[55vw] md:w-[22vw] lg:w-[22vw] relative z-10 -mt-20'/>
 
                             </div>
 
                         </div>
 
 
-                        <div className='YourGuide backdrop-blur-3xl border dark:border-[#23232355] bg-[#fafafadd] dark:bg-[#0f0f0f51]  p-5 px-10 py-20  rounded-xl flex gap-5 justify-center items-center'>
+                        <div className='YourGuide backdrop-blur md:backdrop-blur-3xl lg:backdrop-blur-3xl border dark:border-[#23232355] bg-[#fafafadd] dark:bg-[#0f0f0f51]  p-5 px-10 py-20  rounded-xl flex flex-col md:flex-row lg:flex-row gap-5 justify-center items-center'>
 
                             <div className='basis-[50%]'>
                                 <div className='text-xl font-bold'>YourGuide -
@@ -288,9 +288,9 @@ const Projects = () => {
 
                             <div className='basis-[50%] h-full flex items-center justify-center flex-col'>
 
-                                    <img src={YG3} alt="ViewChart" className='rounded-lg shadowBG w-[40vh] relative z-10 -mb-20 '/>
+                                    <img src={YG3} alt="ViewChart" className='rounded-lg shadowBG w-[55vw] md:w-[22vw] lg:w-[22vw] relative z-10 -mb-20 '/>
 
-                                <div className='flex justify-center bg-[#fafafadd] dark:bg-[#0f0f0f51] c items-center relative z-20 w-[60vh] h-[31vh]'    
+                                <div className='flex justify-center bg-[#fafafadd] dark:bg-[#0f0f0f51] c items-center relative z-20 w-[71vw] h-[19vh] md:w-[31vw] md:h-[31vh] lg:w-[31vw] lg:h-[31vh]'    
                                     onMouseEnter={handleMouseEnter}
                                     onMouseLeave={handleMouseLeave}>
 
@@ -298,7 +298,7 @@ const Projects = () => {
                                     <img
                                         src={YG1}
                                         alt="ViewChart"
-                                        className={`rounded-lg shadowBG object-cover w-[60vh] h-[31vh] absolute top-0 left-0 transition-opacity duration-500 ${isHovered ? 'opacity-0' : 'opacity-100'
+                                        className={`rounded-lg shadowBG object-cover w-[71vw] h-[19vh] md:w-[31vw] md:h-[31vh] lg:w-[31vw] lg:h-[31vh] absolute top-0 left-0 transition-opacity duration-500 ${isHovered ? 'opacity-0' : 'opacity-100'
                                             }`}
                                     />
 
@@ -307,13 +307,13 @@ const Projects = () => {
                                         autoPlay
                                         muted
                                         loop
-                                        className={`rounded-lg object-cover w-[60vh] h-[31vh] absolute top-0 left-0 transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'
+                                        className={`rounded-lg object-cover w-[71vw] h-[19vh] md:w-[31vw] md:h-[31vh] lg:w-[31vw] lg:h-[31vh] absolute top-0 left-0 transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'
                                             }`}
                                     />
 
                                 </div>
 
-                                <img src={YG2} alt="ViewChart" className='rounded-lg shadowBG w-[40vh] relative z-10 -mt-20'/>
+                                <img src={YG2} alt="ViewChart" className='rounded-lg shadowBG w-[55vw] md:w-[22vw] lg:w-[22vw] relative z-10 -mt-20'/>
 
                             </div>
 
@@ -322,7 +322,7 @@ const Projects = () => {
 
                         
 
-                        <div className='ProjectPH backdrop-blur-3xl border dark:border-[#23232355] bg-[#fafafadd] dark:bg-[#0f0f0f51] border-dashed h-[40vh] p-5 px-10 rounded-xl flex gap-5 justify-center items-center'>
+                        <div className='ProjectPH backdrop-blur md:backdrop-blur-3xl lg:backdrop-blur-3xl border dark:border-[#23232355] bg-[#fafafadd] dark:bg-[#0f0f0f51] border-dashed h-[40vh] p-5 px-10 rounded-xl flex flex-col md:flex-row lg:flex-row gap-5 justify-center items-center'>
 
                             <div className='flex flex-col justify-center items-center gap-7'>
                                 <img src={ProPH} alt="" />
