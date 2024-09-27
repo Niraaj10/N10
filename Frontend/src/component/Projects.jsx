@@ -83,7 +83,7 @@ const Projects = () => {
                 {/* Project */}
 
 
-                <div className='text-[5vw] font-bold '>
+                <div className='text-[9vw] lg:text-[5vw] font-bold '>
                     Projects
                     <div className='ml-4 text-lg font-semibold text-[#808080]'>Projects and ideas i've worked on</div>
                 </div>

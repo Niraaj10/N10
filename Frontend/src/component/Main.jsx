@@ -10,6 +10,7 @@ import ProfileCircle from '../assets/project img/PAC_Design.png'
 
 const Main = () => {
   const aboutRef = useRef(null);
+  const homeRef = useRef(null);
   const techRef = useRef(null);
   const projectRef = useRef(null);
   const contactRef = useRef(null);
@@ -30,16 +31,20 @@ const Main = () => {
     contactRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToMain = () => {
+    homeRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
 
 
 
   return (
-    <div className='Main pt-5 relative z-10 bg-white dark:bg-black transition-colors duration-300'>
+    <div className='Main pt-5 relative z-10 bg-white dark:bg-black transition-colors duration-300' ref={homeRef}>
       {/* Niraj10 */}
 
-      <Navbar scrollToAbout={scrollToAbout} scrollToTech={scrollToTech} scrollToPro={scrollToPro} scrollToCont={scrollToCont} />
+      <Navbar scrollToAbout={scrollToAbout} scrollToTech={scrollToTech} scrollToPro={scrollToPro} scrollToCont={scrollToCont} scrollToMain={scrollToMain}/>
 
-      <div className=''>
+      <div className='' >
 
 
         <div className='h-[96vh] md:h-[86vh] lg:h-[86vh] mt-40 md:mt-0 lg:mt-0 mb-20 md:mb-0 lg:mb-0 w-full'>

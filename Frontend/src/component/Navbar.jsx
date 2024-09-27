@@ -5,7 +5,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
 
 
-const Navbar = ({ scrollToAbout, scrollToTech, scrollToPro, scrollToCont }) => {
+const Navbar = ({ scrollToAbout, scrollToTech, scrollToPro, scrollToCont, scrollToMain }) => {
     const [darkmode, setDarkmode] = useState(false);
 
     const toggleDarkMode = () => {
@@ -32,12 +32,12 @@ const Navbar = ({ scrollToAbout, scrollToTech, scrollToPro, scrollToCont }) => {
                         </div>
                     </div>
 
-            <div className='mt-0 m-5 mx-10 p-5 fixed w-[94vw] z-50 px-11 font-bold rounded-xl backdrop-blur-3xl bg-gray-100/20 dark:bg-gray-950/10  transition-colors duration-300 shadowBG dark:shadow-none '>
+            <div className='mt-0 m-5 md:mx-10 lg:mx-10 p-5 fixed w-[91vw] z-50 px-11 font-bold rounded-xl backdrop-blur-3xl bg-gray-100/20 dark:bg-gray-950/10  transition-colors duration-300 shadowBG dark:shadow-none '>
                     
 
                 <div className='flex justify-between items-center'>
 
-                    <div className="logofont font-extrabold text-[6vw] md:text-[4vw] lg:text-[2vw] ">
+                    <div onClick={scrollToMain} className="logofont font-extrabold text-[6vw] md:text-[4vw] lg:text-[2vw] ">
                         N10
                     </div>
 
