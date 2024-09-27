@@ -3,6 +3,16 @@ import { WiDaySunny } from "react-icons/wi";
 import { VscGithubInverted } from "react-icons/vsc";
 import { BsLinkedin } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
+import { LuHome } from "react-icons/lu";
+import { HiOutlinePencilAlt } from "react-icons/hi";
+import { FaRegUser } from "react-icons/fa";
+import { TiShoppingBag } from "react-icons/ti";
+import { LuMail } from "react-icons/lu";
+import { CgDesktop } from "react-icons/cg";
+
+
+
+
 
 
 const Navbar = ({ scrollToAbout, scrollToTech, scrollToPro, scrollToCont, scrollToMain }) => {
@@ -24,11 +34,31 @@ const Navbar = ({ scrollToAbout, scrollToTech, scrollToPro, scrollToCont, scroll
     return (
         <>
                     <div className='md:hidden lg:hidden fixed bottom-2 z-50 '>
-                        <div className="flex md:hidden lg:hidden w-[90vw] gap-5 justify-between mx-6 my-2 rounded-xl p-5 cursor-pointer shadowBG dark:shadow-none backdrop-blur-3xl bg-gray-100/20 dark:bg-gray-950/10">
-                            <div onClick={scrollToAbout}>About</div>
-                            <div onClick={scrollToPro}>Projects</div>
-                            <div onClick={scrollToTech}>TechStack</div>
-                            <div onClick={scrollToCont}>Contact</div>
+                        <div className="flex md:hidden lg:hidden w-[90vw] gap-5 justify-between items-center mx-6 my-2 rounded-xl p-5 cursor-pointer shadowBG dark:shadow-none backdrop-blur-3xl bg-gray-100/20 dark:bg-gray-950/10">
+                            <div onClick={scrollToAbout}>
+                                {/* About */}
+                                <FaRegUser size={23} className='text-gray-600 dark:text-[#808080] cursor-pointer'/>
+                            </div>
+
+                            <div onClick={scrollToPro}>
+                                {/* Projects */}
+                                <HiOutlinePencilAlt size={25} className='text-gray-600 dark:text-[#808080] cursor-pointer'/>
+                            </div>
+
+                            <div onClick={scrollToMain}>
+                                {/* Home */}
+                                <LuHome size={25} className='text-gray-600 dark:text-[#808080] cursor-pointer'/>
+                            </div>
+
+                            <div onClick={scrollToTech}>
+                                {/* TechStack */}
+                                <CgDesktop size={27} className='text-gray-600 dark:text-[#808080] cursor-pointer'/>
+                            </div>
+
+                            <div onClick={scrollToCont}>
+                                {/* Contact */}
+                                <LuMail size={25} className='text-gray-600 dark:text-[#808080] cursor-pointer'/>
+                            </div>
                         </div>
                     </div>
 
