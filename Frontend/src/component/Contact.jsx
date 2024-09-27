@@ -41,16 +41,17 @@ const Contact = () => {
 
     return (
         <>
-            <div className='Contact mx-28 mt-5 pb-11'>
+            <div className='Contact mx-7 md:mx-28 lg:mx-28 mt-5 pb-11'>
+                
                 {/* Contact */}
 
-                <div className='text-[5vw] font-bold'>
+                <div className='text-[9vw] lg:text-[5vw] mb-5 md:mb-0 lg:mb-0 font-bold'>
                     Get in touch
                 </div>
 
 
                 <div className=' '>
-                    <div className='FormBox border m-5 mx-36 p-5 rounded-xl backdrop-blur-3xl shadowBG dark:shadow-none dark:bg-[#0f0f0f] border-gray-100 dark:border-[#23232355]'>
+                    <div className='FormBox border mb-10 md:m-5 lg:m-5 md:mx-36 lg:mx-36  p-3 md:p-5 lg:p-5 rounded-xl backdrop-blur-3xl shadowBG dark:shadow-none dark:bg-[#0f0f0f] border-gray-100 dark:border-[#23232355]'>
 
                         <div className='FormHeader flex justify-between items-center border-b border-gray-100 dark:border-[#ffffff22] py-2 '>
                             <div>
@@ -60,7 +61,7 @@ const Contact = () => {
                             <div></div>
                         </div>
 
-                        <div className='p-4 px-10 text-[#808080]'>
+                        <div className='p-4 md:px-10 lg:px-10 text-[#808080]'>
                             <form onSubmit={handleSubmit}>
 
                                 <div className='mb-3 py-2 border-b border-gray-100 dark:border-[#ffffff3f]'>
