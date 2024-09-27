@@ -85,11 +85,11 @@ const Navbar = ({ scrollToAbout, scrollToTech, scrollToPro, scrollToCont, scroll
                             <FaInstagram size={22} className='text-gray-600 dark:text-[#808080] cursor-pointer' />
                         </a>
 
-                        <a href="https://www.linkedin.com/in/niraj-alone-7231aa328/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/Niraaj10" target="_blank" rel="noopener noreferrer">
                             <VscGithubInverted size={22} className='text-gray-600 dark:text-[#808080] cursor-pointer' />
                         </a>
 
-                        <a href="https://github.com/Niraaj10" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/niraj-alone-7231aa328/" target="_blank" rel="noopener noreferrer">
                             <BsLinkedin size={22} className='text-gray-600 dark:text-[#808080] cursor-pointer' />
                         </a>
 
