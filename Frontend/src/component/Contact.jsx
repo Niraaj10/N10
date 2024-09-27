@@ -31,16 +31,33 @@ const Contact = () => {
 
         emailjs.sendForm('service_a7rndln', 'template_fvaxu8a', e.target, 'Xg8cox_DZlb-nAGCH')
             .then((result) => {
-                console.log(result.text);
-                console.log('Message sent successfully!');
+                // console.log(result.text);
+                // console.log('Message sent successfully!');
 
-                
+                toast('Message Sent', {
+                    position: "bottom-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    progressStyle: { backgroundColor: 'red', }
+                });
 
             }, (error) => {
-                
+                toast.error('Failed to send message. Please try again.', { 
+                    position: "bottom-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined, 
+                });
 
                 console.log(error.text);
-                console.log('Failed to send message. Please try again.');
+                // console.log('Failed to send message. Please try again.');
             });
 
         setFormData({ name: '', email: '', message: '' });
@@ -52,7 +69,17 @@ const Contact = () => {
         <>
             <div className='Contact mx-7 md:mx-28 lg:mx-28 mt-5 pb-11'>
 
-                
+                <ToastContainer
+                    position="bottom-center"
+                    autoClose={5000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                />
 
                 {/* Contact */}
 
