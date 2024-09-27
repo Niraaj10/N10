@@ -34,7 +34,7 @@ const Navbar = ({ scrollToAbout, scrollToTech, scrollToPro, scrollToCont, scroll
     return (
         <>
                     <div className='md:hidden lg:hidden fixed bottom-2 z-50 '>
-                        <div className="flex md:hidden lg:hidden w-[90vw] gap-5 justify-between items-center mx-6 my-2 rounded-xl p-5 cursor-pointer shadowBG dark:shadow-none backdrop-blur-3xl bg-gray-100/20 dark:bg-gray-950/10">
+                        <div className="flex md:hidden lg:hidden w-[90vw]  gap-5 justify-between items-center mx-6 my-2 rounded-xl p-5 cursor-pointer shadowBG dark:shadow-none backdrop-blur-3xl bg-gray-100/20 dark:bg-gray-950/10">
                             <div onClick={scrollToAbout}>
                                 {/* About */}
                                 <FaRegUser size={23} className='text-gray-600 dark:text-[#808080] cursor-pointer'/>
@@ -62,7 +62,7 @@ const Navbar = ({ scrollToAbout, scrollToTech, scrollToPro, scrollToCont, scroll
                         </div>
                     </div>
 
-            <div className='mt-0 m-5 md:mx-10 lg:mx-10 p-5 fixed w-[91vw] z-50 px-11 font-bold rounded-xl backdrop-blur-3xl bg-gray-100/20 dark:bg-gray-950/10  transition-colors duration-300 shadowBG dark:shadow-none '>
+            <div className='mt-0 m-5 md:mx-10 lg:mx-10 p-5 fixed w-[91vw] md:w-[94vw] lg:w-[94vw] z-50 px-11 font-bold rounded-xl backdrop-blur-3xl bg-gray-100/20 dark:bg-gray-950/10  transition-colors duration-300 shadowBG dark:shadow-none '>
                     
 
                 <div className='flex justify-between items-center'>

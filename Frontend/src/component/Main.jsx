@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import bgGlow from '../assets/GlowB.png'
+import GlowDown from '../assets/GlowDown.png'
 import Navbar from './Navbar'
 import N10 from '../assets/N10.png'
 import About from './About'
@@ -102,12 +103,15 @@ const Main = () => {
             <Contact />
           </div>
 
-      
+
 
         </div>
 
 
-    <Footer scrollToAbout={scrollToAbout} scrollToTech={scrollToTech} scrollToPro={scrollToPro} scrollToCont={scrollToCont} scrollToMain={scrollToMain}/>
+
+        <Footer scrollToAbout={scrollToAbout} scrollToTech={scrollToTech} scrollToPro={scrollToPro} scrollToCont={scrollToCont} scrollToMain={scrollToMain} />
+
+        <img src={GlowDown} alt="" className='absolute z-0 md:hidden lg:hidden object-cover w-[100vw] h-[40vh] bottom-0   ' />
 
       </div>
     </div>
