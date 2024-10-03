@@ -7,7 +7,7 @@ const Footer = ({ scrollToAbout, scrollToTech, scrollToPro, scrollToCont, scroll
             <div className='Footer mx-7 md:mx-28 lg:mx-28 mt-5 border-t pt-16 p-7  '>
                 {/* Footer */}
 
-                <img src={bgGlow} alt="" className='absolute z-0 hidden md:block lg:block object-cover w-[85vw] h-[50vh] bottom-0   ' />
+                {/* <img src={bgGlow} alt="" className='absolute z-0 hidden md:block lg:block object-cover w-[85vw] h-[70vh] bottom-0   ' /> */}
 
                 <div className='relative z-20 flex justify-between items-start'>
 

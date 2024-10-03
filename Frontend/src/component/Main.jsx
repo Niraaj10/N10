@@ -66,7 +66,7 @@ const Main = () => {
               </div>
 
               <div className='flex flex-col md:flex-row lg:flex-row items-center gap-7 mt-10 md:mt-3 lg:mt-3 '>
-                <a href="/NirajCVUP.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="/NIRAJ10.pdf" target="_blank" rel="noopener noreferrer">
                   <div className='w-full md:w-[18vw] lg:w-[18vw] text-center p-3 px-7 rounded-xl btnBg text-[#C5C5C5] dark:text-[#808080] font-bold shadowLightBG'>
                     See my resume
                   </div>
@@ -111,7 +111,8 @@ const Main = () => {
 
         <Footer scrollToAbout={scrollToAbout} scrollToTech={scrollToTech} scrollToPro={scrollToPro} scrollToCont={scrollToCont} scrollToMain={scrollToMain} />
 
-        <img src={GlowDown} alt="" className='absolute z-0 md:hidden lg:hidden object-cover w-[100vw] h-[40vh] bottom-0   ' />
+        <img src={GlowDown} alt="" className='absolute z-0 object-cover w-[100vw] h-[40vh] md:h-[60vh] lg:h-[60] bottom-0   ' />
+        {/* <img src={GlowDown} alt="" className='absolute z-0 md:hidden lg:hidden object-cover w-[100vw] h-[40vh] bottom-0   ' /> */}
 
       </div>
     </div>
